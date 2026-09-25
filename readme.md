@@ -23,8 +23,8 @@
 ```java
 public class Sreejith extends SoftwareEngineer {
 
-    String location     = "Tampa, Florida 🇺🇸  (roots in Kerala 🌴)";
-    String role         = "Backend Java Developer • Full-Stack capable";
+    String location     = "Plano, Texas;
+    String role         = "Full Stack Developer / Technical Lead";
     String speciality   = "Identity & Access Management (IAM)";
 
     List<String> focus  = List.of(
@@ -36,15 +36,14 @@ public class Sreejith extends SoftwareEngineer {
 
     List<String> openSource = List.of("OWASP");
 
-    String funFact      = "Security by day, Carnatic music by heart 🎶";
+    String funFact      = "Security by day,  Music by heart 🎶";
 }
 ```
 
 - 🏦 Building the **enterprise authentication platform** at **JPMorgan Chase** — serving every line of business
 - 🔑 Built a **FIDO2 / WebAuthn passkey proof-of-concept** that shaped a firmwide passwordless roadmap
 - ⚙️ Authored a **reusable deployment-automation library** adopted by **12+ engineering teams**
-- 🌍 Actively contributing to **open-source IAM** projects — authentik, Authlib and OWASP
-- 🌱 Currently exploring **IETF OAuth Working Group** discussions and publishing open **WebAuthn test vectors**
+- 🌍 Actively contributing to **open-source IAM** projects 
 - 💬 Ask me about **SSO, federation, passkeys, OAuth/OIDC flows, PingFederate, Spring Boot**
 
 ---
@@ -88,18 +87,10 @@ public class Sreejith extends SoftwareEngineer {
 ## 🚀 Featured Repositories
 
 <p align="center">
-  <a href="https://github.com/cybersreejith/design-patterns">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=cybersreejith&repo=design-patterns&theme=tokyonight&hide_border=true" alt="design-patterns"/>
-  </a>
-  <a href="https://github.com/cybersreejith/springbootsample">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=cybersreejith&repo=springbootsample&theme=tokyonight&hide_border=true" alt="springbootsample"/>
-  </a>
   <a href="https://github.com/cybersreejith/www-project-api-security-testing-framework">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=cybersreejith&repo=www-project-api-security-testing-framework&theme=tokyonight&hide_border=true" alt="owasp-api-security"/>
   </a>
-  <a href="https://github.com/cybersreejith/AI-Quant-Trading-Signal">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=cybersreejith&repo=AI-Quant-Trading-Signal&theme=tokyonight&hide_border=true" alt="ai-quant"/>
-  </a>
+
 </p>
 
 ---
