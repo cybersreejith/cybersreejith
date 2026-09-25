@@ -1,18 +1,18 @@
 <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Hi%2C%20I'm%20Sreejith%20👋&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Identity%20%26%20Access%20Management%20Engineer%20%7C%20Java%20%7C%20Passwordless%20Auth&descAlignY=58&descSize=17" width="100%" alt="header"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Sreejith&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Full%20Stack%20Developer%20%E2%80%A2%20Technical%20Lead%20%E2%80%A2%20Identity%20%26%20Access%20Management&descAlignY=58&descSize=18" width="100%" alt="header"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/cybersreejith">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=640&lines=Securing+identities+at+enterprise+scale+🔐;SSO+%E2%80%A2+SAML+%E2%80%A2+OIDC+%E2%80%A2+OAuth+2.0;FIDO2+%2F+WebAuthn+%26+Passkeys+🔑;PingFederate+Custom+Adapter+Developer;Open-source+contributor+to+IAM+libraries+🌍" alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=680&lines=Securing+identities+at+enterprise+scale+%F0%9F%94%90;SSO+%E2%80%A2+SAML+%E2%80%A2+OIDC+%E2%80%A2+OAuth+2.0;FIDO2+%2F+WebAuthn+%26+Passkeys+%F0%9F%94%91;Project+Leader+%E2%80%94+OWASP+Web+Shield+Library+%F0%9F%A6%89;Security+by+day%2C+music+by+heart+%F0%9F%8E%B6" alt="Typing SVG"/>
   </a>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:YOUR-EMAIL@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://github.com/cybersreejith?tab=repositories"><img src="https://img.shields.io/badge/Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repos"/></a>
+  <a href="https://owasp.org/www-project-webshield-library/"><img src="https://img.shields.io/badge/OWASP_Project_Leader-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP"/></a>
   <img src="https://komarev.com/ghpvc/?username=cybersreejith&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="profile views"/>
 </p>
 
@@ -20,31 +20,116 @@
 
 ## 🧑‍💻 About Me
 
-```java
-public class Sreejith extends SoftwareEngineer {
+<p align="center">
+  <img src="https://img.shields.io/badge/📍_Location-Plano,_Texas-2c5364?style=flat-square"/>
+  <img src="https://img.shields.io/badge/💼_Role-Full_Stack_Developer_%2F_Technical_Lead-203a43?style=flat-square"/>
+  <img src="https://img.shields.io/badge/🛡️_Focus-Identity_%26_Access_Management-0f2027?style=flat-square"/>
+</p>
 
-    String location     = "Plano, Texas;
-    String role         = "Full Stack Developer / Technical Lead";
-    String speciality   = "Identity & Access Management (IAM)";
+<table>
+  <tr>
+    <td width="50%" valign="top">
 
-    List<String> focus  = List.of(
-        "Single Sign-On (SAML 2.0 / OIDC / OAuth 2.0 federation)",
-        "Multifactor & Passwordless Authentication (FIDO2 / WebAuthn / Passkeys)",
-        "PingFederate custom adapter development",
-        "Enterprise authentication platforms at global-bank scale"
-    );
+### 🔐 What I build
 
-    List<String> openSource = List.of("OWASP");
+- **Single Sign-On** — SAML 2.0, OIDC & OAuth 2.0 federation
+- **Passwordless auth** — FIDO2, WebAuthn & passkeys
+- **MFA** at global-bank scale
+- **PingFederate** custom adapters
+- **Full-stack apps** — Java / Spring Boot + React
 
-    String funFact      = "Security by day,  Music by heart 🎶";
-}
+</td>
+    <td width="50%" valign="top">
+
+### 🏆 Highlights
+
+- 🏦 Engineering the **enterprise authentication platform** at **JPMorgan Chase**, serving every line of business
+- 🔑 Built a **passkey proof-of-concept** that shaped a firmwide passwordless roadmap
+- ⚙️ Authored a **deployment-automation library** adopted by **12+ teams**
+- 🦉 **Project Leader** of OWASP Web Shield Library
+
+</td>
+  </tr>
+</table>
+
+> 💬 **Ask me about** SSO, federation, passkeys, OAuth/OIDC flows, PingFederate, Spring Boot, or application security.
+
+---
+
+## 🦉 Featured Project — OWL · OWASP Web Shield Library
+
+<p align="center">
+  <a href="https://github.com/OWASP/www-project-webshield-library">
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:2c5364&height=110&text=OWL%20%F0%9F%A6%89%20OWASP%20Web%20Shield%20Library&fontSize=34&fontColor=ffffff&desc=Security%20controls%20as%20natural%20as%20any%20other%20dependency&descAlignY=78&descSize=15&fontAlignY=40" width="100%" alt="OWL banner"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://owasp.org/www-project-webshield-library/"><img src="https://img.shields.io/badge/OWASP-Project-000000?style=for-the-badge&logo=owasp&logoColor=white"/></a>
+  <a href="https://github.com/OWASP/www-project-webshield-library/stargazers"><img src="https://img.shields.io/github/stars/OWASP/www-project-webshield-library?style=for-the-badge&logo=github&color=f5c518"/></a>
+  <a href="https://github.com/OWASP/www-project-webshield-library/releases"><img src="https://img.shields.io/github/v/release/OWASP/www-project-webshield-library?style=for-the-badge&color=2ea44f"/></a>
+  <a href="https://www.npmjs.com/package/@owasp-core/owl"><img src="https://img.shields.io/npm/v/@owasp-core/owl?style=for-the-badge&logo=npm&label=%40owasp-core%2Fowl&color=CB3837"/></a>
+  <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge"/>
+</p>
+
+A **developer-first JavaScript security toolkit** that maps security controls directly to the **OWASP Top 10 (A01–A10)**, with a framework-agnostic core and a full **React adapter**, so secure-by-default code is one `npm install` away.
+
+<table>
+  <tr>
+    <td width="55%" valign="top">
+
+| # | OWASP Category | OWL Module |
+|:--:|:--|:--|
+| A01 | Broken Access Control | `RBACManager` · `ACLManager` |
+| A02 | Cryptographic Failures | `CryptoManager` (AES-256-GCM) |
+| A03 | Injection | `InputSanitizer` · `InputValidator` |
+| A04 | Insecure Design | `ThreatModelGuard` |
+| A05 | Security Misconfiguration | `HardeningReporter` |
+| A06 | Vulnerable Components | `DependencyRiskScanner` |
+| A07 | Auth Failures | `AuthManager` · `TokenManager` |
+| A08 | Integrity Failures | Secure `HTTPClient` |
+| A09 | Logging & Monitoring | Security monitoring |
+| A10 | SSRF | `SSRFGuard` |
+
+</td>
+    <td width="45%" valign="top">
+
+**⚡ Quick start**
+
+```bash
+npm install @owasp-core/owl
 ```
 
-- 🏦 Building the **enterprise authentication platform** at **JPMorgan Chase** — serving every line of business
-- 🔑 Built a **FIDO2 / WebAuthn passkey proof-of-concept** that shaped a firmwide passwordless roadmap
-- ⚙️ Authored a **reusable deployment-automation library** adopted by **12+ engineering teams**
-- 🌍 Actively contributing to **open-source IAM** projects 
-- 💬 Ask me about **SSO, federation, passkeys, OAuth/OIDC flows, PingFederate, Spring Boot**
+```jsx
+<AuthGate fallback={<SignIn/>}>
+  <PermissionGate
+    action="read"
+    resource="reports"
+    fallback={<Forbidden/>}>
+    <Reports/>
+  </PermissionGate>
+</AuthGate>
+```
+
+</td>
+  </tr>
+</table>
+
+<p align="center">
+  <a href="https://github.com/OWASP/www-project-webshield-library">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=OWASP&repo=www-project-webshield-library&theme=tokyonight&hide_border=true&show_owner=true" alt="OWL repo card"/>
+  </a>
+  <a href="https://github.com/cybersreejith/www-project-api-security-testing-framework">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=cybersreejith&repo=www-project-api-security-testing-framework&theme=tokyonight&hide_border=true" alt="OWASP API security testing"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://owasp.org/www-project-webshield-library/"><b>🌐 Project Page</b></a> &nbsp;•&nbsp;
+  <a href="https://github.com/OWASP/www-project-webshield-library"><b>📦 Repository</b></a> &nbsp;•&nbsp;
+  <a href="https://github.com/OWASP/www-project-webshield-library/issues"><b>🐛 Issues</b></a> &nbsp;•&nbsp;
+  <b>⭐ Star it if it helps you!</b>
+</p>
 
 ---
 
@@ -71,26 +156,6 @@ public class Sreejith extends SoftwareEngineer {
   <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
   <img src="https://img.shields.io/badge/MFA-6C3483?style=for-the-badge&logo=authy&logoColor=white"/>
   <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white"/>
-</p>
-
----
-
-## 🌍 Open-Source Contributions
-
-| Project | Contribution | Highlights |
-|:--|:--|:--|
-| <img src="https://img.shields.io/badge/-OWASP-000000?logo=owasp&logoColor=white"/> | **Project Leader** — OWASP WebShield Library <!-- TODO: add project page link --> | Leading an OWASP security library project |
-| <img src="https://img.shields.io/badge/-OWASP-000000?logo=owasp&logoColor=white"/> | [API Security Testing Framework](https://github.com/cybersreejith/www-project-api-security-testing-framework) | Contributing to OWASP's API security testing effort |
-
----
-
-## 🚀 Featured Repositories
-
-<p align="center">
-  <a href="https://github.com/cybersreejith/www-project-api-security-testing-framework">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=cybersreejith&repo=www-project-api-security-testing-framework&theme=tokyonight&hide_border=true" alt="owasp-api-security"/>
-  </a>
-
 </p>
 
 ---
@@ -130,19 +195,25 @@ public class Sreejith extends SoftwareEngineer {
 
 ## 🔐 Security Principles I Build By
 
-> *"Authenticate strongly, authorize minimally, federate carefully, and never trust a token you didn't verify."*
+<table>
+  <tr>
+    <td align="center" width="25%">🔒<br/><b>Zero Trust</b><br/><sub>Every request proves itself</sub></td>
+    <td align="center" width="25%">🪪<br/><b>Passwordless First</b><br/><sub>Phishing-resistant over shared secrets</sub></td>
+    <td align="center" width="25%">🧾<br/><b>Standards Over Snowflakes</b><br/><sub>SAML, OIDC, OAuth, FIDO2 by the spec</sub></td>
+    <td align="center" width="25%">🧩<br/><b>Reusable Building Blocks</b><br/><sub>Automate once, adopt everywhere</sub></td>
+  </tr>
+</table>
 
-- 🔒 **Zero trust** — every request proves itself
-- 🪪 **Passwordless first** — phishing-resistant credentials over shared secrets
-- 🧾 **Standards over snowflakes** — SAML, OIDC, OAuth 2.0, FIDO2 done by the spec
-- 🧩 **Reusable building blocks** — automate once, adopt everywhere
+<p align="center"><i>"Authenticate strongly, authorize minimally, federate carefully, and never trust a token you didn't verify."</i></p>
 
 ---
 
 ## 🤝 Let's Connect
 
-I'm always happy to talk about **identity, federation, passkeys and open-source security**.
-Open an issue on any of my repos or reach out on LinkedIn!
+<p align="center">
+  Always happy to talk about <b>identity, federation, passkeys and open-source security</b>.<br/>
+  Want to contribute to <a href="https://github.com/OWASP/www-project-webshield-library"><b>OWL 🦉</b></a>? Pick an issue. Contributors are welcome!
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" width="100%" alt="footer"/>
