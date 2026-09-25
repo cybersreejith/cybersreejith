@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/typing.svg" width="100%" alt="Securing identities at enterprise scale | SSO, SAML, OIDC, OAuth 2.0 | FIDO2, WebAuthn and Passkeys"/>
+  <img src="./assets/typing.svg" width="100%" alt="Securing identities at enterprise scale | SSO, SAML, OIDC, OAuth 2.0 | FIDO2, WebAuthn and Passkeys | Project Leader, OWASP Web Shield Library | Security by day, music at heart"/>
 </p>
 
 <p align="center">
