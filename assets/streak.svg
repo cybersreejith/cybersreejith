@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="195" viewBox="0 0 500 195">
+<style>
+.t{font:600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#70a5fd} .l{font:400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#c0caf5} .v{font:700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#c0caf5}
+.s{font:400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#c0caf5} .row{animation:f .6s ease-out both}
+@keyframes f{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion){.row{animation:none}}
+</style>
+<rect x="0.5" y="0.5" width="499" height="194" rx="10" fill="#1a1b27" stroke="#2c5364"/>
+<text x="25" y="35" class="t">Contribution Streak</text>
+<g class="row" style="animation-delay:0ms"><text x="85" y="94" text-anchor="middle" style="font:700 26px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#70a5fd">144</text><text x="85" y="150" text-anchor="middle" class="l">Total Contributions</text><text x="85" y="170" text-anchor="middle" class="s" opacity=".7">Last 12 months</text></g>
+<g class="row" style="animation-delay:150ms"><circle cx="250" cy="85" r="38" fill="none" stroke="#bf91f3" stroke-width="5"/><text x="250" y="94" text-anchor="middle" style="font:700 26px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#c0caf5">4</text><text x="250" y="150" text-anchor="middle" class="l">Current Streak</text><text x="250" y="170" text-anchor="middle" class="s" opacity=".7">days</text></g>
+<line x1="168" y1="55" x2="168" y2="170" stroke="#2c5364"/>
+<g class="row" style="animation-delay:300ms"><text x="415" y="94" text-anchor="middle" style="font:700 26px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif;fill:#70a5fd">6</text><text x="415" y="150" text-anchor="middle" class="l">Longest Streak</text><text x="415" y="170" text-anchor="middle" class="s" opacity=".7">days</text></g>
+<line x1="333" y1="55" x2="333" y2="170" stroke="#2c5364"/>
+</svg>
