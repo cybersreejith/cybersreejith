@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate self-hosted GitHub profile cards into assets/ (no third-party image services).
 
-Outputs: stats.svg, top-langs.svg, streak.svg, activity-graph.svg, repo-owl.svg, repo-api-security.svg
+Outputs: stats.svg, trophies.svg, top-langs.svg, streak.svg, activity-graph.svg, repo-owl.svg, repo-api-security.svg
 Standard library only. Uses GITHUB_TOKEN when present (set automatically in GitHub Actions).
 """
 import json, os, urllib.request, urllib.parse
@@ -74,27 +74,82 @@ def card(width, height, title, body):
 </svg>'''
 
 
-def stats_card(user, repos):
+def get_metrics(user, repos):
     own = [r for r in repos if not r["fork"]]
+    created = user.get("created_at") or ""
+    years = None
+    if created:
+        import datetime
+        years = (datetime.date.today() - datetime.date.fromisoformat(created[:10])).days // 365
+    return {
+        "stars": sum(r["stargazers_count"] for r in own),
+        "repos": user["public_repos"],
+        "prs": search_count("issues", f"author:{USER} type:pr"),
+        "issues": search_count("issues", f"author:{USER} type:issue"),
+        "commits": search_count("commits", f"author:{USER}"),
+        "followers": user["followers"],
+        "years": years,
+    }
+
+
+def stats_card(user, m):
     rows = [
-        (STAR, "Stars earned", sum(r["stargazers_count"] for r in own)),
-        (FORK, "Public repositories", user["public_repos"]),
-        (None, "Pull requests", search_count("issues", f"author:{USER} type:pr")),
-        (None, "Issues opened", search_count("issues", f"author:{USER} type:issue")),
-        (None, "Commits", search_count("commits", f"author:{USER}")),
-        (None, "Followers", user["followers"]),
+        (STAR, "Stars earned", m["stars"]),
+        (FORK, "Public repositories", m["repos"]),
+        (None, "Pull requests", m["prs"]),
+        (None, "Issues opened", m["issues"]),
+        (None, "Commits", m["commits"]),
+        (None, "Followers", m["followers"]),
     ]
     body = []
     for i, (ic, label, val) in enumerate(rows):
-        y = 70 + i * 26
+        y = 64 + i * 23
         mark = icon(ic, 25, y - 13) if ic else f'<rect x="28" y="{y-10}" width="10" height="10" rx="3" fill="{ICON}"/>'
         body.append(f'<g class="row" style="animation-delay:{i*120}ms">{mark}'
                     f'<text x="50" y="{y}" class="l">{label}:</text>'
                     f'<text x="300" y="{y}" class="v" text-anchor="end">{fmt(val)}</text></g>')
-    body.append(f'<g transform="translate(345 62)">'
+    body.append(f'<g transform="translate(345 50) scale(.95)">'
                 f'<path d="M50 0 L95 18 V55 C95 85 72 105 50 115 C28 105 5 85 5 55 V18 Z" fill="none" stroke="{TITLE}" stroke-width="4"/>'
                 f'<path d="M30 58 L45 73 L72 44" fill="none" stroke="{ICON}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>')
-    return card(470, 230, f"{user.get('name') or USER}'s GitHub Stats", "\n".join(body))
+    return card(470, 195, f"{user.get('name') or USER}'s GitHub Stats", "\n".join(body))
+
+
+RANKS = ["SSS", "SS", "S", "AAA", "AA", "A", "B", "C"]
+TROPHIES = [  # (title, metric, thresholds for SSS..C, unit)
+    ("Stars", "stars", [2000, 700, 200, 100, 50, 30, 10, 1], "stars"),
+    ("Commits", "commits", [4000, 2000, 1000, 500, 200, 100, 10, 1], "commits"),
+    ("Followers", "followers", [1000, 400, 200, 100, 50, 20, 10, 1], "followers"),
+    ("Repositories", "repos", [50, 45, 40, 35, 30, 20, 10, 1], "repos"),
+    ("Pull Requests", "prs", [1000, 500, 200, 100, 50, 20, 10, 1], "PRs"),
+    ("Issues", "issues", [1000, 500, 200, 100, 50, 20, 10, 1], "issues"),
+    ("Experience", "years", [15, 10, 7, 5, 4, 3, 2, 1], "years"),
+]
+
+
+def trophy_card(m):
+    box, gap = 110, 6
+    body = []
+    for k, (title, key, th, unit) in enumerate(TROPHIES):
+        val = m.get(key)
+        rank = next((RANKS[i] for i, t in enumerate(th) if val is not None and val >= t), "?")
+        color = ("#f5c518" if rank.startswith("S") else "#c0c0c0" if rank.startswith("A")
+                 else "#cd7f32" if rank in ("B", "C") else "#565f89")
+        x = k * (box + gap)
+        body.append(
+            f'<g transform="translate({x} 0)"><g class="row" style="animation-delay:{k*90}ms">'
+            f'<rect x="0.5" y="0.5" width="{box-1}" height="{box-1}" rx="8" fill="none" stroke="{BORDER}"/>'
+            # cup
+            f'<path d="M37 18 H73 V34 C73 46 64 53 55 53 C46 53 37 46 37 34 Z" fill="{color}"/>'
+            f'<path d="M37 22 H30 C30 32 34 37 40 38 M73 22 H80 C80 32 76 37 70 38" fill="none" stroke="{color}" stroke-width="3"/>'
+            f'<rect x="51" y="53" width="8" height="8" fill="{color}"/><rect x="43" y="61" width="24" height="5" rx="2" fill="{color}"/>'
+            f'<text x="55" y="41" text-anchor="middle" style="font:800 {11 if len(rank) > 2 else 13}px {FONT};fill:{BG}">{rank}</text>'
+            f'<text x="55" y="84" text-anchor="middle" style="font:700 12px {FONT};fill:{TITLE}">{title}</text>'
+            f'<text x="55" y="100" text-anchor="middle" class="s" style="font-size:11px">{fmt(val)} {unit}</text></g></g>')
+    w = len(TROPHIES) * (box + gap) - gap
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{box}" viewBox="0 0 {w} {box}">'
+            f'<style>.s{{font:400 11px {FONT};fill:{TEXT}}} .row{{animation:f .6s ease-out both}}'
+            f'@keyframes f{{from{{opacity:0;transform:translateY(6px)}}to{{opacity:1}}}}</style>'
+            + "".join(body) + "</svg>")
 
 
 def langs_card(repos):
@@ -109,7 +164,7 @@ def langs_card(repos):
             print("languages failed:", r["full_name"], e)
     top = sorted(totals.items(), key=lambda x: -x[1])[:8]
     if not top:
-        return card(350, 130, "Most Used Languages", '<text x="25" y="75" class="s">No language data yet</text>')
+        return card(350, 195, "Most Used Languages", '<text x="25" y="75" class="s">No language data yet</text>')
     total = sum(b for _, b in top)
     bar_w, x = 300, 25.0
     body = [f'<clipPath id="m"><rect x="25" y="55" width="{bar_w}" height="8" rx="4"/></clipPath><g clip-path="url(#m)">']
@@ -123,7 +178,7 @@ def langs_card(repos):
         body.append(f'<g class="row" style="animation-delay:{i*100}ms">'
                     f'<circle cx="{cx+5}" cy="{cy-4}" r="5" fill="{LANG_COLORS.get(lang, "#8b949e")}"/>'
                     f'<text x="{cx+16}" y="{cy}" class="s">{escape(lang)} {100*b/total:.1f}%</text></g>')
-    return card(350, max(90 + ((len(top) + 1) // 2) * 24 + 5, 130), "Most Used Languages", "\n".join(body))
+    return card(350, 195, "Most Used Languages", "\n".join(body))
 
 
 def wrap(text, n):
@@ -212,6 +267,7 @@ def activity_card(days):
     W, H, L, R, T, B = 900, 300, 50, 20, 55, 45
     pw, ph = W - L - R, H - T - B
     mx = max([c for _, c in last] + [4])
+    mx = -(-mx // 4) * 4
     pts = [(L + i * pw / (len(last) - 1), T + ph - c * ph / mx) for i, (_, c) in enumerate(last)]
     line = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f} {y:.1f}" for i, (x, y) in enumerate(pts))
     area = line + f" L{pts[-1][0]:.1f} {T+ph} L{pts[0][0]:.1f} {T+ph} Z"
@@ -241,7 +297,9 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     user = api(f"/users/{USER}")
     repos = api(f"/users/{USER}/repos?per_page=100&type=owner")
-    write("stats.svg", stats_card(user, repos))
+    m = get_metrics(user, repos)
+    write("stats.svg", stats_card(user, m))
+    write("trophies.svg", trophy_card(m))
     write("top-langs.svg", langs_card(repos))
     try:
         total, days = contribution_days()
