@@ -81,8 +81,6 @@ public class Sreejith extends SoftwareEngineer {
 
 | Project | Contribution | Highlights |
 |:--|:--|:--|
-| <img src="https://img.shields.io/badge/-authentik-FD4B2D?logo=authentik&logoColor=white"/> | [PR #24040](https://github.com/goauthentik/authentik/pull/24040) · [PR #24123](https://github.com/goauthentik/authentik/pull/24123) | Fixes & improvements to a popular open-source Identity Provider |
-| <img src="https://img.shields.io/badge/-Authlib-3776AB?logo=python&logoColor=white"/> | [PR #907](https://github.com/authlib/authlib/pull/907) | Implemented the OIDC **`prompt=create`** extension (Initiating User Registration) |
 | <img src="https://img.shields.io/badge/-OWASP-000000?logo=owasp&logoColor=white"/> | **Project Leader** — OWASP WebShield Library <!-- TODO: add project page link --> | Leading an OWASP security library project |
 | <img src="https://img.shields.io/badge/-OWASP-000000?logo=owasp&logoColor=white"/> | [API Security Testing Framework](https://github.com/cybersreejith/www-project-api-security-testing-framework) | Contributing to OWASP's API security testing effort |
 
