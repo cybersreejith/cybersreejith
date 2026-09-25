@@ -6,7 +6,14 @@ on:
   workflow_dispatch:          # run manually from the Actions tab
   push:
     branches: [main]
-    paths-ignore: ["assets/stats.svg", "assets/top-langs.svg", "assets/streak.svg", "assets/activity-graph.svg", "assets/repo-*.svg", "assets/github-snake*.svg"]
+    paths-ignore:
+      - "assets/stats.svg"
+      - "assets/trophies.svg"
+      - "assets/top-langs.svg"
+      - "assets/streak.svg"
+      - "assets/activity-graph.svg"
+      - "assets/repo-*.svg"
+      - "assets/github-snake*.svg"
 
 permissions:
   contents: write
@@ -22,7 +29,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate stats, language and repo cards
+      - name: Generate stats, languages, streak, activity and repo cards
         run: python scripts/generate_cards.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
