@@ -34,7 +34,7 @@ public class Sreejith extends SoftwareEngineer {
         "Enterprise authentication platforms at global-bank scale"
     );
 
-    List<String> openSource = List.of("authentik", "Authlib", "OWASP");
+    List<String> openSource = List.of("OWASP");
 
     String funFact      = "Security by day, Carnatic music by heart 🎶";
 }
@@ -72,7 +72,6 @@ public class Sreejith extends SoftwareEngineer {
   <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
   <img src="https://img.shields.io/badge/MFA-6C3483?style=for-the-badge&logo=authy&logoColor=white"/>
   <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/authentik-FD4B2D?style=for-the-badge&logo=authentik&logoColor=white"/>
 </p>
 
 ---
