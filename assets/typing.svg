@@ -52,16 +52,16 @@
       <animate attributeName="opacity" dur="0.8s" repeatCount="indefinite" values="1;0;1" calcMode="discrete" keyTimes="0;0.5;1"/>
     </rect>
   </g>
-  <clipPath id="c4"><rect x="120.4" y="0" height="50" width="0">
-    <animate attributeName="width" dur="19.0s" repeatCount="indefinite" keyTimes="0.0000;0.8000;0.9263;1.0000" values="0;0;439.2;439.2"/>
+  <clipPath id="c4"><rect x="47.8" y="0" height="50" width="0">
+    <animate attributeName="width" dur="19.0s" repeatCount="indefinite" keyTimes="0.0000;0.8000;0.9263;1.0000" values="0;0;584.4;584.4"/>
   </rect></clipPath>
   <g opacity="0">
     <animate attributeName="opacity" dur="19.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.8000;1.0000" values="0;1;0"/>
     <g clip-path="url(#c4)">
-      <text x="120.4" y="33" class="ty" textLength="409.2" lengthAdjust="spacingAndGlyphs">Security by day, music at heart</text><text x="535.6" y="33" style="font-size:22px">🎶</text>
+      <text x="47.8" y="33" class="ty" textLength="554.4" lengthAdjust="spacingAndGlyphs">Building a passwordless, zero-trust future</text><text x="608.2" y="33" style="font-size:22px">🚀</text>
     </g>
-    <rect y="14" width="3" height="24" fill="#36BCF7" x="120.4">
-      <animate attributeName="x" dur="19.0s" repeatCount="indefinite" keyTimes="0.0000;0.8000;0.9263;1.0000" values="61.0;120.4;562.6;562.6"/>
+    <rect y="14" width="3" height="24" fill="#36BCF7" x="47.8">
+      <animate attributeName="x" dur="19.0s" repeatCount="indefinite" keyTimes="0.0000;0.8000;0.9263;1.0000" values="47.8;47.8;635.2;635.2"/>
       <animate attributeName="opacity" dur="0.8s" repeatCount="indefinite" values="1;0;1" calcMode="discrete" keyTimes="0;0.5;1"/>
     </rect>
   </g>
