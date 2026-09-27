@@ -20,7 +20,6 @@
 ## 🧑‍💻 About Me
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Location-Plano,_Texas-2c5364?style=flat-square&logo=googlemaps&logoColor=white" alt="Location"/>
   <img src="https://img.shields.io/badge/Role-Full_Stack_Developer_%2F_Technical_Lead-203a43?style=flat-square&logo=codementor&logoColor=white" alt="Role"/>
   <img src="https://img.shields.io/badge/Focus-Identity_%26_Access_Management-0f2027?style=flat-square&logo=letsencrypt&logoColor=white" alt="Focus"/>
 </p>
