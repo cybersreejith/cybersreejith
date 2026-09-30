@@ -21,7 +21,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Role-Full_Stack_Developer_%2F_Technical_Lead-203a43?style=flat-square&logo=codementor&logoColor=white" alt="Role"/>
-  <img src="https://img.shields.io/badge/Focus-Identity_%26_Access_Management-0f2027?style=flat-square&logo=letsencrypt&logoColor=white" alt="Focus"/>
+  <img src="https://img.shields.io/badge/Expertise-Identity_%26_Access_Management_Expert_at_a_Leading_US_Financial_Firm-0f2027?style=flat-square&logo=letsencrypt&logoColor=white" alt="Identity and Access Management Expert at a Leading US Financial Firm"/>
+  <img src="https://img.shields.io/badge/Location-Plano%2C_Texas-2c5364?style=flat-square&logo=googlemaps&logoColor=white" alt="Location: Plano, Texas"/>
 </p>
 
 <table>
@@ -41,9 +42,9 @@
 
 ### 🏆 Highlights
 
-- 🏦 Engineering the **enterprise authentication platform** at a **Leading Financial Firm**, serving every line of business
+- 🏦 Engineering the **enterprise authentication platform** at a **Leading US Financial Firm**, serving every line of business
 - 🔑 Built a **passkey proof-of-concept** that shaped a firmwide passwordless roadmap
-- ⚙️ Authored a **deployment-automation library** adopted by **12+ teams**
+- ⚙️ Authored a **deployment-automation library** adopted by **100+ teams**
 - 🦉 **Project Leader** of the OWASP Web Shield Library
 
 </td>
