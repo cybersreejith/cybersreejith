@@ -115,7 +115,6 @@ npm install @owasp-core/owl
 
 <p align="center">
   <a href="https://github.com/OWASP/www-project-webshield-library"><img src="./assets/repo-owl.svg" alt="OWL repository card"/></a>
-  <a href="https://github.com/cybersreejith/www-project-api-security-testing-framework"><img src="./assets/repo-api-security.svg" alt="OWASP API Security Testing repository card"/></a>
 </p>
 
 <p align="center">
